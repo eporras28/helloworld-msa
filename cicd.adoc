@@ -32,8 +32,7 @@ Now install the Jenkins template in the `ci` project:
 ----
 $ oc login -u openshift-dev -p devel
 $ oc new-project ci
-$ oc policy add-role-to-user edit -z default
-$ oc new-app -p JENKINS_PASSWORD=password -p MEMORY_LIMIT=1024Mi https://raw.githubusercontent.com/openshift/origin/master/examples/jenkins/jenkins-ephemeral-template.json
+$ oc new-app -p MEMORY_LIMIT=1024Mi https://raw.githubusercontent.com/openshift/origin/master/examples/jenkins/jenkins-ephemeral-template.json
 $ oc project helloworld-msa
 ----
 
@@ -75,7 +74,7 @@ $ curl -k "https://admin:password@jenkins-ci.rhel-cdk.10.1.2.2.xip.io/job/Aloha%
 
 #### (Option 2) Trigger the build in Jenkins UI
 
-Access: https://jenkins-ci.rhel-cdk.10.1.2.2.xip.io/
+Access: https://jenkins-ci.rhel-cdk.10.1.2.2.xip.io/ (use username="admin" and password="password" to login)
 
 The build should have started automatically. If not, trigger the build yourself.
 

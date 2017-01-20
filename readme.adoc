@@ -27,7 +27,7 @@ This content is brought to you by http://developers.redhat.com - Register today!
 image::images/rhdevelopers.png[]
 
 Latest HTML:
-http://bit.ly/msainstructions
+http://bit.ly/msa-instructions
 
 This is the frontend screenshot that you will see after the deployment of all microservices:
 
@@ -35,13 +35,13 @@ image::images/frontend.png[]
 
 toc::[]
 
-include::prepare-cdk.adoc[]
-
-include::create-project.adoc[]
+include::prepare-env.adoc[]
 
 include::ansible.adoc[]
 
 ## (Option 2) Install each microservice individually
+
+include::create-project.adoc[]
 
 //// 
 REMOVED EAP
@@ -63,17 +63,21 @@ include::bonjour.adoc[]
 
 include::api-gateway.adoc[]
 
+include::frontend.adoc[]
+
 include::kubeflix.adoc[]
 
 include::zipkin.adoc[]
 
-include::frontend.adoc[]
+include::sso.adoc[]
 
 include::config.adoc[]
 
 include::deployments.adoc[]
 
 include::cicd.adoc[]
+
+include::hawkular-apm.adoc[]
 
 include::troubleshooting.adoc[]
 
