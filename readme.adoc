@@ -43,21 +43,11 @@ include::ansible.adoc[]
 
 include::create-project.adoc[]
 
-//// 
-REMOVED EAP
-include::hello.adoc[]
-////
-
 include::hola.adoc[]
 
 include::aloha.adoc[]
 
 include::ola.adoc[]
-
-//// 
-REMOVED Dropwizard
-include::namaste.adoc[]
-////
 
 include::bonjour.adoc[]
 
@@ -67,7 +57,7 @@ include::frontend.adoc[]
 
 include::kubeflix.adoc[]
 
-include::zipkin.adoc[]
+include::jaeger.adoc[]
 
 include::sso.adoc[]
 
@@ -76,8 +66,6 @@ include::config.adoc[]
 include::deployments.adoc[]
 
 include::cicd.adoc[]
-
-include::hawkular-apm.adoc[]
 
 include::troubleshooting.adoc[]
 
